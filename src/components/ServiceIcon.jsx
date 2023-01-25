@@ -4,6 +4,7 @@ import Icon02 from "../assets/img/02.svg";
 import Icon03 from "../assets/img/03.svg";
 import Advantage from './Advantage';
 import PracticeAdvice from './PracticeAdvice';
+import WhoWeAre from './WhoWeAre';
 const ServiceIcon = () => {
   return (
     <>
@@ -54,6 +55,7 @@ const ServiceIcon = () => {
         </section>
         <Advantage/>
         <PracticeAdvice/>
+        <WhoWeAre/>
         </>
   )
 }
