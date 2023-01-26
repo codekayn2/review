@@ -1,5 +1,6 @@
 import React from "react";
 import Icon from "../assets/img/cover.jpg";
+import GetInTouch from "./GetInTouch";
 import ServiceIcon from "./ServiceIcon";
 const Page = () => {
   return (
@@ -34,6 +35,7 @@ const Page = () => {
         </div>
       </div>
       <ServiceIcon />
+      <GetInTouch/>
     </div>
   );
 };

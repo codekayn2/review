@@ -166,9 +166,6 @@ body {
 .page_clients:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
-.page__subscribe {
-  width: 100%;
-}
 
 /* //////// ///////////////////////////////////////*/
 .header-block {
@@ -686,87 +683,111 @@ body {
 
 /* /////////////////////Subscribe/////////////////////////////// */
 
-.subscribe {
-  padding: 0px 0px 20px 0px;
-  position: relative;
+.getintouch {
+  padding: 100px 0px 135px 0px;
 }
-.subscribe::before {
-  height: 70px;
-  left: 0;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #252b42;
+.getintouch__container {
 }
-.subscribe__container {
+.getintouch__header {
+  margin: 0px 0px 80px 0px;
 }
-.subscribe__body {
-  position: relative;
-  z-index: 2;
-  margin: 0px 30px;
-  justify-content: space-between;
-  display: flex;
-  padding: 30px 50px;
-  align-items: center;
-  background: #252b42;
-  border-radius: 2px;
+.getintouch__items{
+  margin: 0px -15px;
 }
 
-@media (min-width: 1070px) {
-  .services__body {
+@media (min-width: 992px) {
+  .getintouch__items {
+    margin: 0;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 }
-@media (min-width: 810px) {
-  .services__body {
-    margin: 0px 30px;
+@media (max-width: 992px) {
+  .getintouch {
+    padding: 50px 0px;
   }
+  .getintouch__header {
+    margin: 0px 0px 50px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .getintouch__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.getintouch__item {
+  flex: 0 1 33.333%;
+}
+.getintouch__sub-title {
+}
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 50px 15px;
+}
+.item-getintouch__active {
+  background: #252b42;
+  padding: 80px 15px;
+    color: white;
+  }
+  .item-getintouch__active .item-getintouch__button {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+
+.item-getintouch > *:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.item-getintouch__icon {
 }
 
-.subscribe__title {
-  max-width: 266px;
-  font-size: 133%;
-  color: #fff;
-  line-height: 32px;
-  font-weight: 700;
-  letter-spacing: 0.1px;
-}
-@media (max-width: 810) {
-  .subscribe__title {
-    margin: 0px 0px 20px 0px;
-  }
-  .subscribe__body {
-    padding: 20px 25px;
-  }
-}
-.subscribe__form {
-  flex: 0 1 50%;
+.item-getintouch__emails {
   display: flex;
-  align-items: center;
-}
-.subscribe__input {
-  flex: 1 1 auto;
-  color: #f9f9f9;
-  min-height: 58px;
-  padding: 0 20px;
-  border-radius: 5px 0 0 5px;
-  border-right: 0;
-  box-sizing: border-box;
-}
-.subscribe__input:focus {
-  color: #000;
-}
-.subscribe__button {
-  background: #ff7b47;
-  border: 1px solid #e6e6e6;
-  display: flex;
-  border-radius: 0 5px 5px 0;
-  min-height: 58px;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
   align-items: center;
-  color: #fff;
-  padding: 0px 22px;
+  padding: 50px 15px;
 }
+
+.item-getintouch__email {
+  color: inherit;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 16px;
+}
+.item-getintouch__email:hover {
+  text-decoration: underline;
+}
+.item-getintouch__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.item-getintouch__button {
+  border: 1px solid #ff7b47;
+  min-height: 44px;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  color: #ff7b47;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 5px;
+  line-height: 142%;
+  transition: all 0.3s ease 0s;
+}
+
+.item-getintouch__button:hover {
+  background: #ff7b47;
+  border: 1px solid #ff7b47;
+  color: #fff;
+}
+
+
+  
+

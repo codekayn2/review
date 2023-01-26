@@ -5,7 +5,7 @@ import Icon3 from "../assets/clients/3.png";
 import Icon4 from "../assets/clients/4.png";
 import Icon5 from "../assets/clients/5.png";
 import Icon6 from "../assets/clients/6.png";
-import Subscribe from "./Subscribe";
+import Subscribe from "./GetInTouch";
 
 const Clients = () => {
   return (
@@ -31,7 +31,6 @@ const Clients = () => {
             <img src={Icon6} alt="Icon6" />
           </div>
         </div>
-        <Subscribe />
       </div>
     </div>
   );
