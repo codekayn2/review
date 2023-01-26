@@ -28,21 +28,23 @@ const WhoWeAre = () => {
             ></iframe>
           </div>
           <div className="whoweare__content">
-            <h2 className="whoweare__title">Most trusted in our field</h2>
-            <div className="whoweare__text">
-              Most calendars are designed for teams. Slate is designed for
-              freelancers who want a simple way to plan their schedule.
+            <div className="whoweare__top">
+              <h2 className="whoweare__title">Most trusted in our field</h2>
+              <div className="whoweare__text">
+                Most calendars are designed for teams. Slate is designed for
+                freelancers who want a simple way to plan their schedule.
+              </div>
             </div>
             <div className="whoweare__items">
               <div className="whoweare__item item-whoweare">
-                <div className="iten-whoweare__icon">
+                <div className="item-whoweare__icon">
                   <img src={Icon1} alt="Icon" />
                 </div>
-                <div className="iten-whoweare__body">
-                  <div className="iten-whoweare__title">
+                <div className="item-whoweare__body">
+                  <div className="item-whoweare__title">
                     the quick fox jumps over the lazy dog
                   </div>
-                  <div className="iten-whoweare__text">
+                  <div className="item-whoweare__text">
                     Things on a very small scale Things on a very small scale
                     Things on a very small scale Things on a very small scale
                   </div>
@@ -50,14 +52,14 @@ const WhoWeAre = () => {
               </div>
 
               <div className="whoweare__item item-whoweare">
-                <div className="iten-whoweare__icon">
+                <div className="item-whoweare__icon">
                   <img src={Icon2} alt="Icon" />
                 </div>
-                <div className="iten-whoweare__body">
-                  <div className="iten-whoweare__title">
+                <div className="item-whoweare__body">
+                  <div className="item-whoweare__title">
                     the quick fox jumps over the lazy dog
                   </div>
-                  <div className="iten-whoweare__text">
+                  <div className="item-whoweare__text">
                     Things on a very small scale Things on a very small scale
                     Things on a very small scale Things on a very small scale
                   </div>

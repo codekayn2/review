@@ -40,6 +40,7 @@ html,
 body {
   background: #fafafa;
   height: 100%;
+
   line-height: 1;
   font-size: 14px;
   color: #252b42;
@@ -160,6 +161,15 @@ body {
 
 .page__whoweare {
 }
+.page__container {
+}
+.page_clients:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.page__subscribe {
+  width: 100%;
+}
+
 /* //////// ///////////////////////////////////////*/
 .header-block {
   text-align: center;
@@ -524,16 +534,21 @@ body {
 /* ///============================= */
 
 .whoweare {
+  background: #ffffff;
   padding: 80px 0px 130px 0px;
 }
+
 .whoweare__container {
 }
 .whoweare__header {
   margin: 0px 0px 100px 0px;
 }
+
 .whoweare__body {
   display: flex;
+  align-items: flex-end;
 }
+
 .whoweare__video {
   flex: 0 0 57%;
   position: relative;
@@ -549,13 +564,21 @@ body {
 }
 .whoweare__content {
   flex: 1 1 auto;
-  padding: 0px 0px 0px 121px;
+  padding: 20px 0px 0px 121px;
 }
+
+@media (max-width: 1080px) {
+  .whoweare__content {
+    padding: 0px 0px 0px 50px;
+  }
+}
+
 .whoweare__title {
   font-weight: 800;
   font-size: 40px;
   line-height: 142%;
 }
+
 .whoweare__title:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
@@ -563,18 +586,187 @@ body {
   color: #737373;
   line-height: 142%;
 }
-.whoweare__items {
-  margin: 50px 0px 0px 0px;
+.whoweare__top:not(:last-child) {
+  margin: 0px 0px 50px 0px;
 }
+.whoweare__items {
+}
+
 .whoweare__item {
 }
+
+.whoweare__item:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
 .item-whoweare {
+  display: flex;
 }
 .item-whoweare__icon {
+  flex: 0 0 32px;
 }
 .item-whoweare__body {
+  flex: 1 1 auto;
+  padding: 0px 0px 0px 20px;
 }
 .item-whoweare__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.item-whoweare__title:not(:last-child) {
+  margin: 0px 0px 5px 0px;
 }
 .item-whoweare__text {
+  color: #737373;
+  white-space: nowrap;
+  line-height: 142%;
+  width: 225px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 950px) {
+  .whoweare {
+    padding: 50px 0px 50px 0px;
+  }
+  .whoweare__body {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .whoweare__title {
+    font-size: 24px;
+  }
+  .whoweare__content {
+    padding: 0px 0px 0px 0px;
+  }
+  .whoweare__video {
+    padding: 0px 0px 56.25% 0px;
+  }
+  .whoweare__video:not(:last-child) {
+    margin: 50px 0px 0px 0px;
+  }
+  .whoweare__header {
+    margin: 0px 0px 30px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .whoweare {
+    padding: 20px 0px 50px 0px;
+  }
+  .whoweare__top:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+  .whoweare__video:not(:last-child) {
+    margin: 30px 0px 0px 0px;
+  }
+}
+
+/* /////////////CLIENTS/////////////////////// */
+
+.clients {
+  padding: 50px 0px;
+}
+.clients__container {
+}
+.clients__items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.clients__item {
+  padding: 8px 15px;
+  flex: 0 1 16.6667%;
+  text-align: center;
+  min-width: 140px;
+}
+.clients__item img {
+  max-width: 100%;
+}
+
+/* /////////////////////Subscribe/////////////////////////////// */
+
+.subscribe {
+  padding: 0px 0px 20px 0px;
+  position: relative;
+}
+.subscribe::before {
+  height: 70px;
+  left: 0;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #252b42;
+}
+.subscribe__container {
+}
+.subscribe__body {
+  position: relative;
+  z-index: 2;
+  margin: 0px 30px;
+  justify-content: space-between;
+  display: flex;
+  padding: 30px 50px;
+  align-items: center;
+  background: #252b42;
+  border-radius: 2px;
+}
+
+@media (min-width: 1070px) {
+  .services__body {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 810px) {
+  .services__body {
+    margin: 0px 30px;
+  }
+}
+
+.subscribe__title {
+  max-width: 266px;
+  font-size: 133%;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+@media (max-width: 810) {
+  .subscribe__title {
+    margin: 0px 0px 20px 0px;
+  }
+  .subscribe__body {
+    padding: 20px 25px;
+  }
+}
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+}
+.subscribe__input {
+  flex: 1 1 auto;
+  color: #f9f9f9;
+  min-height: 58px;
+  padding: 0 20px;
+  border-radius: 5px 0 0 5px;
+  border-right: 0;
+  box-sizing: border-box;
+}
+.subscribe__input:focus {
+  color: #000;
+}
+.subscribe__button {
+  background: #ff7b47;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  border-radius: 0 5px 5px 0;
+  min-height: 58px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  padding: 0px 22px;
 }
