@@ -2,6 +2,7 @@ import React from "react";
 import Icon1 from "../assets/getintouch/1.png";
 import Icon2 from "../assets/getintouch/2.png";
 import Icon3 from "../assets/getintouch/3.png";
+import Contact from "./Contact"
 const GetInTouch = () => {
   return (
     <section className="page__getintouch getintouch">
@@ -87,6 +88,7 @@ const GetInTouch = () => {
           </div>
         </div>
       </div>
+      <Contact/>
     </section>
   );
 };

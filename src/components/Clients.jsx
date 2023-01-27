@@ -5,7 +5,8 @@ import Icon3 from "../assets/clients/3.png";
 import Icon4 from "../assets/clients/4.png";
 import Icon5 from "../assets/clients/5.png";
 import Icon6 from "../assets/clients/6.png";
-import Subscribe from "./GetInTouch";
+import Contact from "./Contact"
+
 
 const Clients = () => {
   return (

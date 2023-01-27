@@ -6,6 +6,8 @@ import Advantage from "./Advantage";
 import Clients from "./Clients";
 import PracticeAdvice from "./PracticeAdvice";
 import WhoWeAre from "./WhoWeAre";
+import Contact from "./Contact";
+
 const ServiceIcon = () => {
   return (
     <>
